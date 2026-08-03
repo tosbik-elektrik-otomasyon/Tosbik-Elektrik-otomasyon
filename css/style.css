@@ -986,3 +986,62 @@ transform:translateY(0);
 }
 
 }
+.reference-card{
+
+border:none;
+
+border-radius:18px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.reference-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.reference-card img{
+
+height:220px;
+
+object-fit:cover;
+
+transition:.4s;
+
+}
+
+.reference-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.reference-card .card-body{
+
+padding:25px;
+
+}
+
+.reference-card h5{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.reference-card p{
+
+font-size:15px;
+
+color:#666;
+
+min-height:70px;
+
+}
