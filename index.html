@@ -2,345 +2,865 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TOSBİK Elektrik & Otomasyon | Bandırma</title>
+<title>TOSBİK Elektrik & Otomasyon | Bandırma</title>
 
-    <meta name="description" content="PLC Programlama, HMI Panel, Endüstriyel Otomasyon, Elektrik Tesisatı, Ev Elektrik İşleri, LED Aydınlatma">
-    <meta name="keywords" content="Bandırma Elektrikçi, PLC, HMI, Otomasyon, Elektrik">
-    <meta name="author" content="TOSBİK Elektrik & Otomasyon">
+<meta name="description" content="PLC Programlama, HMI Panel, Endüstriyel Otomasyon, Elektrik Tesisatı, Ev Elektrik İşleri, LED Aydınlatma">
 
-    <link rel="icon" href="images/logo.jpg">
+<meta name="keywords" content="Bandırma Elektrikçi, PLC, HMI, Otomasyon, Elektrik">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta name="author" content="TOSBİK Elektrik & Otomasyon">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="icon" href="images/logo.jpg">
 
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center flex-nowrap" href="#">
-                <img src="images/logo.jpg" width="45" height="45" class="rounded-circle me-2 flex-shrink-0" alt="Logo">
-                <span class="fw-bold text-info text-nowrap fs-5">
-                    TOSBİK <span class="text-white fs-6 fw-normal ms-1">Elektrik & Otomasyon</span>
-                </span>
-            </a>
-            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#anasayfa">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hizmetler">Hizmetler</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#referanslar">Referanslar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#iletisim">İletişim</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
 
-    <!-- HERO SECTION -->
-    <section id="anasayfa" class="hero">
-        <div class="container">
-            <div class="row align-items-center min-vh-100 py-5">
-                <div class="col-lg-6">
-                    <h5 class="text-info mb-3">
-                        Profesyonel Elektrik & Otomasyon Hizmetleri
-                    </h5>
-                    <h1 class="display-3 fw-bold">
-                        TOSBİK<br>Elektrik & Otomasyon
-                    </h1>
-                    <p class="lead mt-4">
-                        ✔ PLC Programlama<br>
-                        ✔ HMI Panel Programlama<br>
-                        ✔ Endüstriyel Otomasyon<br>
-                        ✔ Elektrik Tesisatı<br>
-                        ✔ Ev Elektrik İşleri<br>
-                        ✔ Elektrik Bakım & Onarım<br>
-                        ✔ Elektrik Tadilatı<br>
-                        ✔ Elektrik Tamiratı<br>
-                        ✔ Elektrik Yenileme<br>
-                        ✔ Sigorta Kutusu<br>
-                        ✔ Priz ve Anahtar<br>
-                        ✔ LED & RGB Aydınlatma
-                    </p>
-                    <div class="mt-4">
-                        <a href="tel:+905352709893" class="btn btn-info btn-lg me-2">
-                            <i class="fa-solid fa-phone"></i> Ara
-                        </a>
-                        <a href="https://wa.me/905352709893" target="_blank" class="btn btn-success btn-lg">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="images/hero.jpg" class="img-fluid hero-img rounded shadow" alt="Hero">
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="container">
 
-    <!-- HİZMETLER SECTION -->
-    <section id="hizmetler" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Hizmetlerimiz</h2>
-                <p class="text-muted">Elektrik ve otomasyon alanında profesyonel çözümler sunuyoruz.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card p-4 bg-white rounded shadow-sm text-center h-100">
-                        <i class="fa-solid fa-microchip fa-3x text-info mb-3"></i>
-                        <h4>PLC Programlama</h4>
-                        <p class="text-muted">Fatek, Delta, Siemens, Kinco ve Beijer PLC yazılım hizmetleri.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card p-4 bg-white rounded shadow-sm text-center h-100">
-                        <i class="fa-solid fa-display fa-3x text-info mb-3"></i>
-                        <h4>HMI Panel Programlama</h4>
-                        <p class="text-muted">Operatör panel tasarımı, reçete sistemleri ve ekran geliştirme.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card p-4 bg-white rounded shadow-sm text-center h-100">
-                        <i class="fa-solid fa-industry fa-3x text-info mb-3"></i>
-                        <h4>Endüstriyel Otomasyon</h4>
-                        <p class="text-muted">Makine otomasyonu, revizyon ve devreye alma hizmetleri.</p>
-                    </div>
-                </div>
-                <!-- EV ELEKTRİK İŞLERİ (İKON EKLENDİ) -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card p-4 bg-white rounded shadow-sm text-center h-100">
-                        <i class="fa-solid fa-house-chimney-crack fa-3x text-info mb-3"></i>
-                        <h4>Ev Elektrik İşleri</h4>
-                        <p class="text-muted">Elektrik arızaları, tesisat, bakım, onarım, tadilat, tamirat ve yenileme.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card p-4 bg-white rounded shadow-sm text-center h-100">
-                        <i class="fa-solid fa-plug-circle-bolt fa-3x text-info mb-3"></i>
-                        <h4>Priz • Anahtar • Sigorta</h4>
-                        <p class="text-muted">Priz değişimi, anahtar montajı, sigorta kutusu yenileme ve kaçak akım rölesi kurulumu.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card p-4 bg-white rounded shadow-sm text-center h-100">
-                        <i class="fa-solid fa-lightbulb fa-3x text-info mb-3"></i>
-                        <h4>LED Aydınlatma</h4>
-                        <p class="text-muted">Mutfak tezgahı LED, RGB LED, sensörlü LED ve dekoratif aydınlatma.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<a class="navbar-brand d-flex align-items-center" href="#">
 
-    <!-- HAKKIMIZDA SECTION -->
-    <section id="hakkimizda" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold mb-4">Hakkımızda</h2>
-                    <p>TOSBİK Elektrik & Otomasyon olarak Bandırma ve çevresinde elektrik ve endüstriyel otomasyon alanında profesyonel hizmet vermekteyiz.</p>
-                    <p>PLC programlama, HMI panel yazılımı, elektrik tesisatı, pano montajı, bakım, onarım, tadilat, tamirat, yenileme ve LED aydınlatma konularında kaliteli çözümler sunuyoruz.</p>
-                    <p>Önceliğimiz kaliteli işçilik, güvenilir hizmet ve müşteri memnuniyetidir.</p>
-                    <a href="https://wa.me/905352709893" target="_blank" class="btn btn-success mt-2">
-                        <i class="fab fa-whatsapp"></i> Bizimle İletişime Geçin
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/referans2.jpg" class="img-fluid rounded shadow" alt="Hakkımızda">
-                </div>
-            </div>
-        </div>
-    </section>
+<img src="images/logo.jpg"
 
-    <!-- İSTATİSTİKLER -->
-    <section class="py-5 bg-dark text-white">
-        <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-6 col-md-3">
-                    <h2 class="text-info fw-bold">6+</h2>
-                    <p class="mb-0">Yıllık Deneyim</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h2 class="text-info fw-bold">250+</h2>
-                    <p class="mb-0">Tamamlanan İş</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h2 class="text-info fw-bold">%100</h2>
-                    <p class="mb-0">Müşteri Memnuniyeti</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h2 class="text-info fw-bold">7/24</h2>
-                    <p class="mb-0">Teknik Destek</p>
-                </div>
-            </div>
-        </div>
-    </section>
+width="45"
 
-    <!-- REFERANSLAR SECTION -->
-    <section id="referanslar" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Referanslarımız</h2>
-                <p class="text-muted">Tamamladığımız elektrik ve otomasyon projelerinden bazı örnekler.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="images/referans1.jpg" class="card-img-top" alt="PLC Programlama">
-                        <div class="card-body text-center">
-                            <h5>PLC Programlama</h5>
-                            <p class="card-text text-muted">PLC yazılımı ve makine otomasyonu.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="images/referans2.jpg" class="card-img-top" alt="Elektrik Panosu">
-                        <div class="card-body text-center">
-                            <h5>Elektrik Panosu</h5>
-                            <p class="card-text text-muted">Elektrik panosu montajı ve revizyonu.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="images/referans3.jpg" class="card-img-top" alt="LED Aydınlatma">
-                        <div class="card-body text-center">
-                            <h5>LED Aydınlatma</h5>
-                            <p class="card-text text-muted">RGB ve dekoratif LED uygulamaları.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="images/referans4.jpg" class="card-img-top" alt="Ev Elektrik İşleri">
-                        <div class="card-body text-center">
-                            <h5>Ev Elektrik İşleri</h5>
-                            <p class="card-text text-muted">Bakım, onarım ve tesisat yenileme.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+height="45"
 
-    <!-- NEDEN BİZ -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="p-4 shadow-sm rounded text-center border h-100">
-                        <i class="fa-solid fa-bolt fa-3x text-info mb-3"></i>
-                        <h4>Hızlı Servis</h4>
-                        <p class="text-muted mb-0">Elektrik arızalarına hızlı müdahale.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-4 shadow-sm rounded text-center border h-100">
-                        <i class="fa-solid fa-gears fa-3x text-info mb-3"></i>
-                        <h4>Profesyonel Çözüm</h4>
-                        <p class="text-muted mb-0">Modern ekipman ve kaliteli işçilik.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-4 shadow-sm rounded text-center border h-100">
-                        <i class="fa-solid fa-handshake fa-3x text-info mb-3"></i>
-                        <h4>Müşteri Memnuniyeti</h4>
-                        <p class="text-muted mb-0">İşimizi güvenle ve titizlikle tamamlıyoruz.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+class="rounded-circle me-2"
 
-    <!-- İLETİŞİM SECTION -->
-    <section id="iletisim" class="py-5 bg-dark text-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">İletişim</h2>
-                <p>Elektrik ve otomasyon ihtiyaçlarınız için bize ulaşabilirsiniz.</p>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <h4 class="mb-4">İletişim Bilgileri</h4>
-                    <p><i class="fa-solid fa-location-dot text-info me-2"></i> Bandırma / Balıkesir</p>
-                    <p>
-                        <i class="fa-solid fa-phone text-info me-2"></i>
-                        <a href="tel:+905352709893" class="text-white text-decoration-none">0535 270 98 93</a>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-envelope text-info me-2"></i>
-                        <a href="mailto:ozkurt696@gmail.com" class="text-white text-decoration-none">ozkurt696@gmail.com</a>
-                    </p>
-                    <div class="mt-4">
-                        <a href="tel:+905352709893" class="btn btn-info me-2">
-                            <i class="fa-solid fa-phone"></i> Ara
-                        </a>
-                        <a href="https://wa.me/905352709893" target="_blank" class="btn btn-success">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps?q=Bandirma&output=embed" width="100%" height="350" style="border:0;border-radius:15px" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+alt="Logo">
 
-    <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/905352709893" class="floating-whatsapp" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<span class="fw-bold text-info">
 
-    <!-- SCROLL TO TOP -->
-    <button id="topBtn">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
+TOSBİK
 
-    <!-- FOOTER -->
-    <footer class="bg-black text-center text-white py-4">
-        <div class="container">
-            <h4 class="text-info">TOSBİK Elektrik & Otomasyon</h4>
-            <p class="mb-1">PLC Programlama • HMI Panel • Endüstriyel Otomasyon</p>
-            <p class="mb-1">Elektrik Tesisatı • Ev Elektrik İşleri</p>
-            <p class="mb-3">LED Aydınlatma • Elektrik Bakım • Onarım</p>
-            <hr class="border-secondary">
-            <p class="mb-0">© 2026 TOSBİK Elektrik & Otomasyon</p>
-        </div>
-    </footer>
+</span>
 
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app.js"></script>
+</a>
+
+<button class="navbar-toggler"
+
+type="button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#navbarMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+
+id="navbarMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link" href="#anasayfa">
+
+Ana Sayfa
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#hizmetler">
+
+Hizmetler
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#hakkimizda">
+
+Hakkımızda
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#referanslar">
+
+Referanslar
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#iletisim">
+
+İletişim
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<section id="anasayfa" class="hero">
+
+<div class="container">
+
+<div class="row align-items-center min-vh-100">
+
+<div class="col-lg-6">
+
+<h5 class="text-info mb-3">
+
+Profesyonel Elektrik & Otomasyon Hizmetleri
+
+</h5>
+
+<h1 class="display-3 fw-bold">
+
+TOSBİK
+
+<br>
+
+Elektrik & Otomasyon
+
+</h1>
+
+<p class="lead mt-4">
+
+✔ PLC Programlama
+
+<br>
+
+✔ HMI Panel Programlama
+
+<br>
+
+✔ Endüstriyel Otomasyon
+
+<br>
+
+✔ Elektrik Tesisatı
+
+<br>
+
+✔ Ev Elektrik İşleri
+
+<br>
+
+✔ Elektrik Bakım & Onarım
+
+<br>
+
+✔ Elektrik Tadilatı
+
+<br>
+
+✔ Elektrik Tamiratı
+
+<br>
+
+✔ Elektrik Yenileme
+
+<br>
+
+✔ Sigorta Kutusu
+
+<br>
+
+✔ Priz ve Anahtar
+
+<br>
+
+✔ LED & RGB Aydınlatma
+
+</p>
+
+<div class="mt-4">
+
+<a href="tel:+905352709893"
+
+class="btn btn-info btn-lg me-2">
+
+<i class="fa-solid fa-phone"></i>
+
+Ara
+
+</a>
+
+<a href="https://wa.me/905352709893"
+
+target="_blank"
+
+class="btn btn-success btn-lg">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="images/hero.jpg"
+
+class="img-fluid hero-img"
+
+alt="Hero">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="hizmetler" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">
+
+Hizmetlerimiz
+
+</h2>
+
+<p class="text-muted">
+
+Elektrik ve otomasyon alanında profesyonel çözümler sunuyoruz.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-4">
+
+<div class="service-card">
+
+<i class="fa-solid fa-microchip fa-3x text-info mb-3"></i>
+
+<h4>PLC Programlama</h4>
+
+<p>
+
+Fatek, Delta, Siemens, Kinco ve Beijer PLC yazılım hizmetleri.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="service-card">
+
+<i class="fa-solid fa-display fa-3x text-info mb-3"></i>
+
+<h4>HMI Panel Programlama</h4>
+
+<p>
+
+Operatör panel tasarımı, reçete sistemleri ve ekran geliştirme.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="service-card">
+
+<i class="fa-solid fa-industry fa-3x text-info mb-3"></i>
+
+<h4>Endüstriyel Otomasyon</h4>
+
+<p>
+
+Makine otomasyonu, revizyon ve devreye alma hizmetleri.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="service-card">
+
+<i class="fa-solid fa-house-bolt fa-3x text-info mb-3"></i>
+
+<h4>Ev Elektrik İşleri</h4>
+
+<p>
+
+Elektrik arızaları, tesisat, bakım, onarım, tadilat, tamirat ve yenileme.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="service-card">
+
+<i class="fa-solid fa-plug-circle-bolt fa-3x text-info mb-3"></i>
+
+<h4>Priz • Anahtar • Sigorta</h4>
+
+<p>
+
+Priz değişimi, anahtar montajı, sigorta kutusu yenileme ve kaçak akım rölesi kurulumu.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="service-card">
+
+<i class="fa-solid fa-lightbulb fa-3x text-info mb-3"></i>
+
+<h4>LED Aydınlatma</h4>
+
+<p>
+
+Mutfak tezgahı LED, RGB LED, sensörlü LED ve dekoratif aydınlatma.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="hakkimizda" class="py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h2 class="fw-bold mb-4">
+
+Hakkımızda
+
+</h2>
+
+<p>
+
+TOSBİK Elektrik & Otomasyon olarak Bandırma ve çevresinde elektrik ve endüstriyel otomasyon alanında profesyonel hizmet vermekteyiz.
+
+</p>
+
+<p>
+
+PLC programlama, HMI panel yazılımı, elektrik tesisatı, pano montajı, bakım, onarım, tadilat, tamirat, yenileme ve LED aydınlatma konularında kaliteli çözümler sunuyoruz.
+
+</p>
+
+<p>
+
+Önceliğimiz kaliteli işçilik, güvenilir hizmet ve müşteri memnuniyetidir.
+
+</p>
+
+<a href="https://wa.me/905352709893"
+
+target="_blank"
+
+class="btn btn-success">
+
+<i class="fab fa-whatsapp"></i>
+
+Bizimle İletişime Geçin
+
+</a>
+
+</div>
+
+<div class="col-lg-6">
+
+<img src="images/referans2.jpg"
+
+class="img-fluid rounded shadow"
+
+alt="Hakkımızda">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5 bg-dark text-white">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h2 class="text-info">6+</h2>
+
+<p>Yıllık Deneyim</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="text-info">250+</h2>
+
+<p>Tamamlanan İş</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="text-info">%100</h2>
+
+<p>Müşteri Memnuniyeti</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="text-info">7/24</h2>
+
+<p>Teknik Destek</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="referanslar" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">
+
+Referanslarımız
+
+</h2>
+
+<p class="text-muted">
+
+Tamamladığımız elektrik ve otomasyon projelerinden bazı örnekler.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-3">
+
+<div class="card border-0 shadow h-100">
+
+<img src="images/referans1.jpg"
+
+class="card-img-top"
+
+alt="PLC Programlama">
+
+<div class="card-body text-center">
+
+<h5>PLC Programlama</h5>
+
+<p>
+
+PLC yazılımı ve makine otomasyonu.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-3">
+
+<div class="card border-0 shadow h-100">
+
+<img src="images/referans2.jpg"
+
+class="card-img-top"
+
+alt="Elektrik Panosu">
+
+<div class="card-body text-center">
+
+<h5>Elektrik Panosu</h5>
+
+<p>
+
+Elektrik panosu montajı ve revizyonu.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-3">
+
+<div class="card border-0 shadow h-100">
+
+<img src="images/referans3.jpg"
+
+class="card-img-top"
+
+alt="LED Aydınlatma">
+
+<div class="card-body text-center">
+
+<h5>LED Aydınlatma</h5>
+
+<p>
+
+RGB ve dekoratif LED uygulamaları.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-3">
+
+<div class="card border-0 shadow h-100">
+
+<img src="images/referans4.jpg"
+
+class="card-img-top"
+
+alt="Ev Elektrik İşleri">
+
+<div class="card-body text-center">
+
+<h5>Ev Elektrik İşleri</h5>
+
+<p>
+
+Bakım, onarım ve tesisat yenileme.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<div class="p-4 shadow rounded text-center">
+
+<i class="fa-solid fa-bolt fa-3x text-info mb-3"></i>
+
+<h4>Hızlı Servis</h4>
+
+<p>
+
+Elektrik arızalarına hızlı müdahale.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="p-4 shadow rounded text-center">
+
+<i class="fa-solid fa-gears fa-3x text-info mb-3"></i>
+
+<h4>Profesyonel Çözüm</h4>
+
+<p>
+
+Modern ekipman ve kaliteli işçilik.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="p-4 shadow rounded text-center">
+
+<i class="fa-solid fa-handshake fa-3x text-info mb-3"></i>
+
+<h4>Müşteri Memnuniyeti</h4>
+
+<p>
+
+İşimizi güvenle ve titizlikle tamamlıyoruz.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="iletisim" class="py-5 bg-dark text-white">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">
+
+İletişim
+
+</h2>
+
+<p>
+
+Elektrik ve otomasyon ihtiyaçlarınız için bize ulaşabilirsiniz.
+
+</p>
+
+</div>
+
+<div class="row g-5">
+
+<div class="col-lg-6">
+
+<h4 class="mb-4">
+
+İletişim Bilgileri
+
+</h4>
+
+<p>
+
+<i class="fa-solid fa-location-dot text-info"></i>
+
+Bandırma / Balıkesir
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-phone text-info"></i>
+
+<a href="tel:+905352709893" class="text-white text-decoration-none">
+
+0535 270 98 93
+
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope text-info"></i>
+
+<a href="mailto:ozkurt696@gmail.com"
+
+class="text-white text-decoration-none">
+
+ozkurt696@gmail.com
+
+</a>
+
+</p>
+
+<div class="mt-4">
+
+<a href="tel:+905352709893"
+
+class="btn btn-info me-2">
+
+<i class="fa-solid fa-phone"></i>
+
+Ara
+
+</a>
+
+<a href="https://wa.me/905352709893"
+
+target="_blank"
+
+class="btn btn-success">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<iframe
+
+src="https://www.google.com/maps?q=Bandirma&output=embed"
+
+width="100%"
+
+height="350"
+
+style="border:0;border-radius:15px"
+
+loading="lazy">
+
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<a href="https://wa.me/905352709893"
+
+class="floating-whatsapp"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<footer class="bg-black text-center text-white py-4">
+
+<div class="container">
+
+<h4 class="text-info">
+
+TOSBİK Elektrik & Otomasyon
+
+</h4>
+
+<p>
+
+PLC Programlama • HMI Panel • Endüstriyel Otomasyon
+
+</p>
+
+<p>
+
+Elektrik Tesisatı • Ev Elektrik İşleri
+
+</p>
+
+<p>
+
+LED Aydınlatma • Elektrik Bakım • Onarım
+
+</p>
+
+<hr>
+
+<p>
+
+© 2026 TOSBİK Elektrik & Otomasyon
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/app.js"></script>
 
 </body>
 
