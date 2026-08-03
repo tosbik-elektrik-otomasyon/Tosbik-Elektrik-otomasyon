@@ -1007,13 +1007,10 @@ box-shadow:0 20px 40px rgba(0,0,0,.25);
 }
 
 .reference-card img{
-
-height:220px;
-
-object-fit:cover;
-
-transition:.4s;
-
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
 }
 
 .reference-card:hover img{
