@@ -3,9 +3,15 @@ TOSBİK Elektrik & Otomasyon
 app.js
 ==========================================*/
 
+/*=============================
+NAVBAR
+=============================*/
+
 window.addEventListener("scroll", function () {
 
     const navbar = document.querySelector(".navbar");
+
+    if (!navbar) return;
 
     if (window.scrollY > 80) {
 
@@ -27,31 +33,35 @@ YUKARI ÇIK BUTONU
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
+if (topBtn) {
 
-    if (window.scrollY > 400) {
+    window.addEventListener("scroll", () => {
 
-        topBtn.style.display = "flex";
+        if (window.scrollY > 400) {
 
-    } else {
+            topBtn.style.display = "flex";
 
-        topBtn.style.display = "none";
+        } else {
 
-    }
+            topBtn.style.display = "none";
 
-});
-
-topBtn.addEventListener("click", () => {
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
+        }
 
     });
 
-});
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
 
 /*=============================
 SCROLL ANİMASYONU
@@ -77,7 +87,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(
 
-".service-card,.gallery-box,.comment-card,.faq-item,.stat,.about,.contact"
+".service-card,.gallery-box,.comment-card,.faq-item,.stat-box,.about-card,.contact-box,.reference-card"
 
 ).forEach(el => {
 
@@ -91,36 +101,92 @@ WHATSAPP BUTONU
 
 const whatsapp = document.querySelector(".floating-whatsapp");
 
-setInterval(() => {
+if (whatsapp) {
 
-    whatsapp.animate([
+    setInterval(() => {
 
-        { transform: "scale(1)" },
+        whatsapp.animate([
 
-        { transform: "scale(1.12)" },
+            { transform: "scale(1)" },
 
-        { transform: "scale(1)" }
+            { transform: "scale(1.12)" },
 
-    ], {
+            { transform: "scale(1)" }
 
-        duration: 1200
+        ], {
+
+            duration: 1200
+
+        });
+
+    }, 5000);
+
+}
+
+/*=============================
+SAYAÇLAR
+=============================*/
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+
+        const target = parseInt(counter.dataset.target);
+
+        let count = 0;
+
+        const speed = Math.max(1, Math.ceil(target / 80));
+
+        function updateCounter() {
+
+            count += speed;
+
+            if (count < target) {
+
+                counter.innerText = count;
+
+                requestAnimationFrame(updateCounter);
+
+            } else {
+
+                counter.innerText = target;
+
+            }
+
+        }
+
+        updateCounter();
+
+        counterObserver.unobserve(counter);
 
     });
 
-}, 5000);
+}, {
+
+    threshold: 0.5
+
+});
+
+counters.forEach(counter => {
+
+    counterObserver.observe(counter);
+
+});
 
 /*=============================
-SAYAÇ ANİMASYONU
+FOOTER YILI
 =============================*/
 
-document.querySelectorAll(".stat h2").forEach(counter => {
+const year = document.getElementById("year");
 
-    const text = counter.innerText;
+if (year) {
 
-    const number = parseInt(text);
+    year.innerText = new Date().getFullYear();
 
-    if (isNaN(number)) return;
-
-    let count = 0;
-
-    const speed = Math
+}
