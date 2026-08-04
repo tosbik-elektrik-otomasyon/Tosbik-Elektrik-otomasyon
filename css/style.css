@@ -142,14 +142,10 @@ padding-top:120px;
 
 .hero h1{
 
-font-size:60px;
-
-font-weight:800;
-
-line-height:1.2;
-
-margin-bottom:20px;
-
+    font-size:48px;
+    font-weight:700;
+    color:#38bdf8;
+    line-height:1.2;
 }
 
 .hero h3{
@@ -785,31 +781,27 @@ background:#0284c7;
 RESPONSIVE
 ==================================================*/
 
-@media(max-width:991px){
+@media (max-width:991px){
 
 .hero{
-
-text-align:center;
-
-padding-top:140px;
-
+    text-align:center;
+    padding-top:140px;
 }
 
 .hero h1{
-
-font-size:42px;
-
+    font-size:34px;
+    color:#38bdf8;
+    font-weight:700;
+    line-height:1.2;
 }
 
-.hero h3{
-
-font-size:22px;
-
+.hero h5{
+    font-size:20px;
 }
 
 .hero p{
-
-font-size:17px;
+    font-size:18px;
+}
 
 }
 
