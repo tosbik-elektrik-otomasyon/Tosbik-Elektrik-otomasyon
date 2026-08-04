@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://tosbik-elektrik-otomasyon.github.io/Tosbik-Elektrik-otomasyon/sitemap.xml
