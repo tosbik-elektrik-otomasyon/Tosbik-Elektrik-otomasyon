@@ -896,13 +896,20 @@ font-size:28px;
 
 #topBtn{
 
-width:48px;
-
-height:48px;
-
-font-size:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+    line-height:1;
 
 }
+
+#topBtn i{
+
+    margin:0;
+    transform:translateY(1px);
+
+
 
 }
 
