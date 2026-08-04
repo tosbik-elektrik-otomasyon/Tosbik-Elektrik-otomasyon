@@ -730,43 +730,27 @@ YUKARI ÇIK
 ==================================================*/
 
 #topBtn{
+    position:fixed;
+    left:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#0ea5e9;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    transition:.3s;
+    z-index:999;
+    box-shadow:0 10px 25px rgba(14,165,233,.35);
 
-position:fixed;
-
-left:25px;
-
-bottom:25px;
-
-width:55px;
-
-height:55px;
-
-border:none;
-
-border-radius:50%;
-
-background:#0ea5e9;
-
-color:#fff;
-
-font-size:22px;
-
-cursor:pointer;
-
-display:none;
-
-transition:.3s;
-
-z-index:999;
-
-box-shadow:0 10px 25px rgba(14,165,233,.35);
-
-}
-
-#topBtn:hover{
-
-transform:translateY(-5px);
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    line-height:1;
+    padding:0;
 }
 
 /*==================================================
