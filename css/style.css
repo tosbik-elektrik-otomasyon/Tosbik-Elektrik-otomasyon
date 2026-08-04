@@ -124,22 +124,17 @@ HERO
 .hero{
 
 min-height:100vh;
-
 display:flex;
-
 align-items:center;
 
 background:
-
 linear-gradient(rgba(15,23,42,.85),
-
 rgba(15,23,42,.92)),
-
-url("../images/hero.jpg");
+url("../images/arkaplan.jpg");
 
 background-size:cover;
-
-background-position:center;
+background-position:center center;
+background-repeat:no-repeat;
 
 padding-top:120px;
 
