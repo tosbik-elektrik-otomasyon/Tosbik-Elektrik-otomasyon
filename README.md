@@ -1,16 +1,16 @@
 ## Hi there 👋
 
-<!--
-**tosbik-elektrik-otomasyon/Tosbik-Elektrik-otomasyon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Tosbik Elektrik Otomasyon
 
-Here are some ideas to get you started:
+Bandırma ve çevresinde profesyonel elektrik ve otomasyon hizmetleri.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Hizmetlerimiz
+- PLC Yazılım
+- HMI Panel Programlama
+- Endüstriyel Otomasyon
+- Elektrik Arıza Tespiti
+- LED Aydınlatma
+- Elektrik Tesisatı
+
+🌐 Web Sitemiz:
+https://tosbik-elektrik-otomasyon.github.io/Tosbik-Elektrik-otomasyon/
