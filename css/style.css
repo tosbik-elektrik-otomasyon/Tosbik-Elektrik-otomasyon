@@ -728,7 +728,10 @@ color:#fff;
 /*==================================================
 YUKARI ÇIK
 ==================================================*/
-
+#topBtn i{
+    margin:0;
+    transform:translateY(1px);
+}
 #topBtn{
     position:fixed;
     left:25px;
